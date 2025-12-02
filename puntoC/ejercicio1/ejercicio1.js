@@ -3,9 +3,13 @@ Un agricultor tiene un terreno rectangular y conoce su base y su altura en metro
 Quiere calcular tanto el área como el perímetro del terreno para cercarlo y sembrar.
 Diseña un programa en el que él pueda obtener ambos valores.
 */
+import vaca from "prompt-sync";
+const pollito = vaca();
 
-let base = 20
-let altura = 30
+
+
+let base = parseFloat(pollito ("ingrese el valor de la base :"));
+let altura = parseFloat(pollito ("ingrese el valor de la altura :"));
 
 const area = base * altura;
 const perimetro = (base + altura ) * 2;

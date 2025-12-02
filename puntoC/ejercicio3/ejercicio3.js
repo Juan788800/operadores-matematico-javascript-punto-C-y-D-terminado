@@ -5,12 +5,15 @@ duplican las visitas. Representa esta situación y determina cuál es el valor f
 contador*/
 
 //contador de visitas
+// importamos la libreria de prompt-sync
+import vaca from "prompt-sync";
+const calcular = vaca();
 
-let contador_de_visitas = 100;
+let contador_de_visitas = parseFloat(calcular("por favor ingrese el contador de visitas:"));
 
-let visitas_adicionales = 25;
+let visitas_adicionales = parseFloat(calcular("por favor ingrese cuantas visitas adicionales obtuvo :"));
 
-let vistas_perdidas= 10;
+let vistas_perdidas= parseFloat(calcular("por favor ingrese cuantas visitas perdidas obtuvo :"));
 
 let vistas_duplicadas = (contador_de_visitas + visitas_adicionales - vistas_perdidas) * 2;
 
